@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共同購買プラン - 粉もんプロジェクト</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 仅针对此页面所需的额外样式，确保表格在移动端可滚动 */
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .data-table { min-width: 550px; font-size: 0.8rem; }
+        .org-table th, .org-table td { min-width: 80px; }
+        .step-list { list-style: none; padding: 0; }
+        .step-list li { background-color: #e9f5ff; padding: 12px; border-left: 5px solid #007bff; border-radius: 6px; margin-bottom: 15px; font-size: 0.9rem; }
+        .step-list strong { display: block; font-size: 1.0rem; margin-bottom: 5px; color: #007bff; }
+    </style>
+</head>
+<body>
+
+<header class="app-header">
+    <h1>共同団体：共同購買プラン</h1>
+    <p>原材料費の恒常的な引き下げを実現</p>
+</header>
+
+<nav class="nav-menu">
+    <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="summary.html">概要</a></li>
+        <li class="dropdown-item">
+            <a href="kyodo_dantai_index.html" class="active">共同団体</a>
+            <div class="dropdown-content">
+                <a href="kyodo_koubai.html" class="active">共同購買プラン</a>
+                <a href="kyodo_keiyaku.html">共同契約プラン</a>
+            </div>
+        </li>
+        <li><a href="jinzaishare.html">人材シェア</a></li>
+        <li class="dropdown-item">
+            <a href="kokyaku_service_index.html">顧客サービス</a>
+            <div class="dropdown-content">
+                <a href="kokyaku_taiken.html">顧客体験の向上</a>
+                <a href="konamon_map.html">粉もんマップ詳細</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<main class="container">
+    <div class="report-content">
+        <h2>共同購買の事業詳細</h2>
+
+        <p class="section-lead">個人経営の粉もん店が直面する原材料価格の高騰に対し、店舗同士の協力によって購買力を束ね、仕入れ単価の恒常的な引き下げと供給の安定化を実現する仕組みです。</p>
+
+        <h3>事業詳細（コスト削減と運用の仕組み）</h3>
+        <p>各店舗が単独で行ってきた発注はプラットフォームが一括で取りまとめ、仕入れ先とのボリュームディスカウント交渉を担います。当社は発注管理・請求集約・クレーム一次対応・配送を行う。店舗の負担を最小限に抑えます。経営資源プラットフォームの事例では、共同購買で平均<span class="data-highlight">20％前後のコスト削減効果</span>が報告されています。</p>
+        <p>中期的には、加盟店舗の需要データを基盤にSKUの最適化やMOQの調整を行い、効率的な供給体制を整えます。また、<span class="data-highlight">ハラール対応の原材料</span>の安定供給体制も整備し、商品開発シェフや管理栄養士による新メニュー開発支援も行うことで、単なるコスト削減を超えた魅力強化を推進します。</p>
+
+        <h3 style="margin-top: 30px;">想定数値／指標（共同仕入れ）</h3>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>内容</th>
+                    <th>想定数値／指標</th>
+                    <th>実現のための条件／注意点</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>コスト削減率</td>
+                    <td>品目をまとめて共同で仕入れることでの単価低下</td>
+                    <td class="data-highlight">5〜15％の削減</td>
+                    <td>参加店舗数が多いほど交渉力が上がる。最初は近隣の３〜５店舗でトライ。品質基準を統一すること。</td>
+                </tr>
+                <tr>
+                    <td>原価率改善例</td>
+                    <td>売上500万円／月の店舗で仕入れコストを10万円削減した場合</td>
+                    <td class="data-highlight">原価率30％→28％に改善</td>
+                    <td>月次でデータを取る仕組み（仕入先・価格・量・廃棄率など）を整える必要あり。</td>
+                </tr>
+                <tr>
+                    <td>物流コストの改善</td>
+                    <td>共同配送を導入した場合の削減率</td>
+                    <td class="data-highlight">年間で約17.6％の配送コスト削減の事例あり</td>
+                    <td>配送ルート・納品時間・車両制限など調整が必要。</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 style="margin-top: 30px;">共同仕入れに必要な体制と移行モデル</h3>
+        <p>小規模試行には**LLP**が最適。長期的な共同購買基盤とするには事業協同組合への移行が推奨されます。</p>
+        <div class="table-responsive">
+            <table class="data-table org-table">
+                <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>事業協同組合</th>
+                    <th>一般社団法人</th>
+                    <th>LLP（有限責任事業組合）</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>メリット</td>
+                    <td class="data-highlight">補助金適用・制度適合</td>
+                    <td>設立が迅速、柔軟</td>
+                    <td>小規模試行に最適</td>
+                </tr>
+                <tr>
+                    <td>デメリット</td>
+                    <td>行政認可・監督あり</td>
+                    <td>利益分配不可</td>
+                    <td>信用力が限定的</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 style="margin-top: 30px;">実施ステップ</h3>
+        <ul class="step-list">
+            <li>
+                <strong>1. 初期調査フェーズ（1～2ヶ月）</strong>
+                対象地域選定、店舗数（目安5～20店舗）集め、共通仕入れ品目と量・頻度、現状の単価・物流コストをヒアリング。
+            </li>
+            <li>
+                <strong>2. 試行発注フェーズ（3～4ヶ月）</strong>
+                共通品目（粉、キャベツ、油など）を5〜10品目選定し、共同発注スケジュールを決定。物流手配を開始。
+            </li>
+            <li>
+                <strong>3. 評価フェーズ（試行後1ヶ月）</strong>
+                削減額・単価低下率・配送コストをデータで比較し、運用上の課題を抽出。
+            </li>
+            <li>
+                <strong>4. 本格導入フェーズ</strong>
+                品目拡大（ハラール対応等）、地域特産との連携、仕入れ価格・物流コストの定期的な見直し。
+            </li>
+        </ul>
+
+        <a href="kyodo_keiyaku.html" class="cta-button">共同契約プランを見る</a>
+    </div>
+
+    <footer class="app-footer">
+        <p>© 2025 粉もんプロジェクト</p>
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* 基本重置とフォント */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f4f7f9; /* 柔和の背景色 */
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 30px; /* 底部余白 */
+}
+
+/* 强调色：報告書のログインボタンから抽出したオレンジ */
+:root {
+    --primary-color: #FF8C38; /* 活力オレンジ */
+    --secondary-color: #4CAF50; /* 緑 */
+    --text-color: #333;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ------------------- ヘッダー (Header) ------------------- */
+.app-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 20px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.app-header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ------------------- ナビゲーション (Navigation) - ドロップダウン対応 ------------------- */
+.nav-menu {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 8px 12px; /* 調整 */
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    font-size: 0.85rem;
+    text-align: center;
+    display: block; /* aタグをブロック要素にする */
+}
+
+.nav-menu a:hover, .nav-menu .active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* --- ドロップダウンメニューのスタイル --- */
+.dropdown-content {
+    display: none; /* 初期状態では非表示 */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-top: 3px solid var(--primary-color);
+    left: 50%;
+    transform: translateX(-50%); /* 中央寄せ */
+    top: 100%; /* 親メニューの下に配置 */
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: var(--primary-color);
+}
+
+/* 親要素（li）にホバーしたときにドロップダウンを表示 */
+.nav-menu li:hover .dropdown-content {
+    display: block;
+}
+
+/* サブメニュー内の active スタイルは親メニューと区別する */
+.dropdown-content .active {
+    background-color: #ccc;
+    color: var(--primary-color);
+}
+
+/* ------------------- メインコンテンツコンテナ ------------------- */
+.container {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ------------------- カード (Card) スタイル (ホームページ用) ------------------- */
+.card {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* 注意: index.html 中使用了内联 style 来控制左边框颜色，此处的样式可能被覆盖。 */
+    border-left: 5px solid var(--primary-color);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    margin-right: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* ------------------- レポートコンテンツ (Report Content) スタイル ------------------- */
+.report-content {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.report-content h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.report-content h3 {
+    color: var(--text-color);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+.report-content h4 {
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+.report-content p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.report-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.report-content li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border-left: 3px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f0f0f0;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.data-highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 25px;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+
+/* ------------------- フッター (Footer) ------------------- */
+.app-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.75rem;
+    color: #999;
+}
