@@ -6,10 +6,38 @@
   <title>人材シェア - 粉もんプロジェクト</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Inline styles for language switch and page-specific styles */
+    .lang-switch {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+    .lang-switch a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: background-color 0.3s;
+    }
+    .lang-switch a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .table-responsive {
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+    .data-table { min-width: 550px; }
+  </style>
 </head>
 <body>
 
 <header class="app-header">
+  <div class="lang-switch">
+    <a href="jinzaishare-en.html">English (EN)</a>
+  </div>
   <h1>人材シェア・資格制度</h1>
   <p>教育コスト削減とピーク時対応力の強化</p>
 </header>
@@ -38,7 +66,7 @@
 
 <main class="container">
   <div class="report-content">
-    <h2>粉もん店の人手不足解消ソリューション</h2>
+    <h2>課題とソリューションの概要</h2>
     <p>飲食店の非正規雇用における人手不足割合は7割に達しており、急な欠員対応やピーク時対応が課題です。この課題を解決するため、「共通研修」と「資格制度」を基盤とする人材シェアプラットフォームを構築します。</p>
 
     <h3>1. 共通研修プログラムの導入（SDG 8 ・ 9）</h3>
@@ -61,26 +89,31 @@
       <table class="data-table">
         <thead>
         <tr>
-          <th>対象</th>
+          <th>ステークホルダー</th>
           <th>メリット</th>
+          <th>SDGs貢献</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>事業者</td>
-          <td class="data-highlight">急な欠員対応、採用・教育コストの大幅削減。</td>
+          <td>コスト削減、ピーク時の即時増員、労働力供給の安定化。</td>
+          <td>SDG 8, 9</td>
         </tr>
         <tr>
-          <td>労働者</td>
-          <td>複数の店舗で働けるため、より柔軟な働き方と<span class="data-highlight">収入の安定化</span>。</td>
+          <td>従業員</td>
+          <td>時給アップ、スキル認定、地域内での職務移動性向上。</td>
+          <td>SDG 8</td>
         </tr>
         <tr>
           <td>地域</td>
-          <td>飲食業界全体のサービスレベル向上と、安定した雇用機会の提供。</td>
+          <td>サービス品質の向上、共有人材プールの創出、経済の強靭化。</td>
+          <td>SDG 11</td>
         </tr>
         </tbody>
       </table>
     </div>
+
     <a href="index.html" class="cta-button">ホームに戻る</a>
   </div>
 

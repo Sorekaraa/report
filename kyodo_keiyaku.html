@@ -8,6 +8,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* 仅针对此页面所需的额外样式，确保表格在移动端可滚动 */
+    .lang-switch {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+    .lang-switch a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: background-color 0.3s;
+    }
+    .lang-switch a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
     .table-responsive {
       overflow-x: auto;
       margin-bottom: 20px;
@@ -21,6 +38,9 @@
 <body>
 
 <header class="app-header">
+  <div class="lang-switch">
+    <a href="kyodo_keiyaku-en.html">English (EN)</a>
+  </div>
   <h1>共同団体：共同契約プラン</h1>
   <p>電力・ガス調達におけるコスト削減と再エネ促進</p>
 </header>
@@ -30,7 +50,7 @@
     <li><a href="index.html">ホーム</a></li>
     <li><a href="summary.html">概要</a></li>
     <li class="dropdown-item">
-      <a href="kyodo_dantai_index.html" class="active">共同団体</a>
+      <a href="kyodo_dantai_index.html">共同団体</a>
       <div class="dropdown-content">
         <a href="kyodo_koubai.html">共同購買プラン</a>
         <a href="kyodo_keiyaku.html" class="active">共同契約プラン</a>
@@ -49,36 +69,31 @@
 
 <main class="container">
   <div class="report-content">
-    <h2>共同契約の事業詳細（電気を例に）</h2>
+    <h2>共同契約の仕組み（電力・ガス）</h2>
+    <p>複数の地元事業者の電力・ガス消費量を集約し、エネルギー小売業者に対して大規模な入札/オークションを実施します。これにより交渉力が最大化され、光熱費の大幅な削減と**再生可能エネルギーの利用促進（SDGs 7 & 13）**につながります。</p>
 
-    <p class="section-lead">電力やガスといったエネルギーの調達を複数店舗で束ね、交渉力を高めることによってコストを削減し、さらに再生可能エネルギーへの切り替えを促進する仕組みです。</p>
-
-    <h3>事業詳細：コスト削減と環境価値</h3>
-    <p>参加店舗の電力・ガス使用量をプラットフォームに集約し、まとめて需要量を提示することで、エネルギー会社に対して大規模需要者と同等の交渉力を発揮します。契約はオークション方式や一括見積方式を導入します。岐阜県の先行事例では、オークション形式で電力会社と契約し、平均<span class="data-highlight">13〜18％のコスト削減</span>が報告されています。</p>
-    <p>さらに、本プランは単なる経費削減に留まらず、調達する電力・ガスを可能な限り<span class="data-highlight">再生可能エネルギー</span>に切り替えることで、「脱炭素に取り組むブランドイメージ」を獲得し、消費者への共感を喚起します。</p>
-
-    <h3 style="margin-top: 30px;">想定数値／参考例</h3>
+    <h3>共同契約による期待効果</h3>
     <div class="table-responsive">
       <table class="data-table">
         <thead>
         <tr>
-          <th>項目</th>
-          <th>内容</th>
-          <th>現在数値／今までの参考例</th>
-          <th>実現のための条件／注意点</th>
+          <th>指標</th>
+          <th>定義</th>
+          <th>結果/目標</th>
+          <th>条件</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>割引率（再エネ含む）</td>
           <td>再エネを含む共同電力契約での削減率</td>
-          <td class="data-highlight">平均7～10％の割引</td>
+          <td>平均7～10％の割引</td>
           <td>対象電力使用量が一定以上あること。入札／オークション形式で複数業者競わせる。</td>
         </tr>
         <tr>
           <td>節約額例</td>
           <td>共同電力切り替えでの実際の節約額例</td>
-          <td class="data-highlight">年間平均9％（約1万円）の削減例あり</td>
+          <td>年間平均9％（約1万円）の削減例あり</td>
           <td>電力使用量が多い店舗ほど金額絶対値の削減が大きくなる。</td>
         </tr>
         <tr>
@@ -103,23 +118,21 @@
       </li>
       <li>
         <strong>3. 契約交渉と方式決定</strong>
-        **逆転オークション方式**を採用し、複数の電力会社に競争させる。固定価格／市場型／ハイブリッド型を比較検討する。
+        **逆転オークション方式**を採用し、複数の電力会社に競争させる。固定価格／市場連動型の決定。
       </li>
       <li>
-        <strong>4. 再生可能エネルギーの適用</strong>
-        再生可能エネルギーオプションを活用し、低コストで「実質再生可能エネルギー」化を実現する。
+        <strong>4. 契約実行とモニタリング</strong>
+        契約締結、既存電力会社への切り替え通知を行い、切り替え後の使用量・料金を継続的にモニタリングする。
       </li>
     </ul>
 
-    <h3 style="margin-top: 30px;">年間コスト削減モデルシミュレーション（10店舗参加時）</h3>
-    <p>共同購買と共同契約を組み合わせることで、**各店舗で年間約208万円のコスト削減**の可能性があります。</p>
-
-    <a href="kyodo_koubai.html" class="cta-button" style="background-color: #6c757d;">共同購買プランに戻る</a>
+    <a href="kyodo_dantai_index.html" class="cta-button">共同団体索引に戻る</a>
   </div>
 
   <footer class="app-footer">
     <p>© 2025 粉もんプロジェクト</p>
   </footer>
 </main>
+
 </body>
 </html>

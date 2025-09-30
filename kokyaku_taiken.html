@@ -6,10 +6,38 @@
     <title>顧客体験の向上 - 粉もんプロジェクト</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Inline styles for language switch and page-specific styles */
+        .lang-switch {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: background-color 0.3s;
+        }
+        .lang-switch a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .data-table { min-width: 400px; font-size: 0.9rem; }
+    </style>
 </head>
 <body>
 
 <header class="app-header">
+    <div class="lang-switch">
+        <a href="kokyaku_taiken-en.html">English (EN)</a>
+    </div>
     <h1>顧客サービス：顧客体験の向上</h1>
     <p>「食べる」から「体験する」文化への転換</p>
 </header>
@@ -38,25 +66,18 @@
 
 <main class="container">
     <div class="report-content">
-        <h2>インバウンド対応・体験型サービスの導入</h2>
-        <p>インバウンド増加と若年層への訴求力強化のため、「食べる」行為に「作る」「学ぶ」「シェアする」といった体験価値を加えます。</p>
+        <h2>課題：顧客定着率の低さと観光客体験</h2>
+        <p>従来の広告方法に依存した**高い顧客獲得コスト**と、一度の飲食体験後のリピート率の低さが主要課題です。これに対し、**体験型「粉もん作り」の導入**を通じて顧客価値を高めます（SDG 11）。</p>
 
-        <h3>主要課題：体験要素の不足</h3>
+        <h3>体験向上における3つの柱</h3>
+
+        <h4>① 体験型粉もんサービスの導入</h4>
         <ul>
-            <li>従来のサービス：単なる食事の提供に留まり、外国人や観光客に対する特別な体験提供が不足している。</li>
-            <li>結果：<span class="data-highlight">客単価の上昇と顧客満足度向上</span>の機会損失。</li>
+            <li>サービス：自分でたこ焼き・お好み焼きなどを作る「体験」の提供。</li>
+            <li>効果：顧客滞在時間と、来店による情緒的価値の向上。収益の柱を飲食から**体験料**にシフト。</li>
         </ul>
 
-        <h3 style="margin-top: 30px;">ソリューション：体験型サービス・設計</h3>
-        <p>「旅のプロセス」に合わせてサービスをデザインし、個店での負担を抑えつつ、顧客の満足度とリピート率を高めます。</p>
-
-        <h4>① 体験コンテンツ（例：たこ焼き体験）</h4>
-        <ul>
-            <li>コンテンツ：たこ焼きの「作り方教室」、限定トッピングセットの提供、文化歴史解説の追加。</li>
-            <li>目的：単価上昇（体験料＋高付加価値セット）、滞在時間延長、口コミ発生。</li>
-        </ul>
-
-        <h4>② 多言語・デジタル対応（個店負担を軽減）</h4>
+        <h4>② 観光客（インバウンド）対応</h4>
         <ul>
             <li>「旅ナカ」：QRコードで多言語メニュー＆文化解説</li>
             <li>「旅アト」：体験記念NFT·SNS投稿促進で再訪誘導</li>
@@ -82,7 +103,7 @@
                 <tbody>
                 <tr>
                     <td>客単価</td>
-                    <td class="data-highlight">＋20～30％（体験料·限定セット導入）</td>
+                    <td>＋20～30％（体験料·限定セット導入）</td>
                 </tr>
                 <tr>
                     <td>新規顧客層</td>

@@ -8,6 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* 仅针对此页面所需的额外样式，确保表格在移动端可滚动 */
+        .lang-switch {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: background-color 0.3s;
+        }
+        .lang-switch a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
         .table-responsive {
             overflow-x: auto;
             margin-bottom: 20px;
@@ -22,8 +39,11 @@
 <body>
 
 <header class="app-header">
+    <div class="lang-switch">
+        <a href="kyodo_koubai-en.html">English (EN)</a>
+    </div>
     <h1>共同団体：共同購買プラン</h1>
-    <p>原材料費の恒常的な引き下げを実現</p>
+    <p>原材料調達におけるコスト削減と供給安定化</p>
 </header>
 
 <nav class="nav-menu">
@@ -50,55 +70,46 @@
 
 <main class="container">
     <div class="report-content">
-        <h2>共同購買の事業詳細</h2>
+        <h2>共同購買の仕組み</h2>
+        <p>複数の地元事業者の購買量を集約することで、仕入業者に対する交渉力を高め、原材料の仕入れ単価引き下げと安定した調達を実現します。これは、**SDG 8（経済成長）**に直接貢献します。</p>
 
-        <p class="section-lead">個人経営の粉もん店が直面する原材料価格の高騰に対し、店舗同士の協力によって購買力を束ね、仕入れ単価の恒常的な引き下げと供給の安定化を実現する仕組みです。</p>
-
-        <h3>事業詳細（コスト削減と運用の仕組み）</h3>
-        <p>各店舗が単独で行ってきた発注はプラットフォームが一括で取りまとめ、仕入れ先とのボリュームディスカウント交渉を担います。当社は発注管理・請求集約・クレーム一次対応・配送を行う。店舗の負担を最小限に抑えます。経営資源プラットフォームの事例では、共同購買で平均<span class="data-highlight">20％前後のコスト削減効果</span>が報告されています。</p>
-        <p>中期的には、加盟店舗の需要データを基盤にSKUの最適化やMOQの調整を行い、効率的な供給体制を整えます。また、<span class="data-highlight">ハラール対応の原材料</span>の安定供給体制も整備し、商品開発シェフや管理栄養士による新メニュー開発支援も行うことで、単なるコスト削減を超えた魅力強化を推進します。</p>
-
-        <h3 style="margin-top: 30px;">想定数値／指標（共同仕入れ）</h3>
+        <h3>共同購買による期待効果</h3>
         <div class="table-responsive">
             <table class="data-table">
                 <thead>
                 <tr>
-                    <th>項目</th>
-                    <th>内容</th>
-                    <th>想定数値／指標</th>
-                    <th>実現のための条件／注意点</th>
+                    <th>品目</th>
+                    <th>平均価格削減目標</th>
+                    <th>留意事項</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>コスト削減率</td>
-                    <td>品目をまとめて共同で仕入れることでの単価低下</td>
-                    <td class="data-highlight">5〜15％の削減</td>
-                    <td>参加店舗数が多いほど交渉力が上がる。最初は近隣の３〜５店舗でトライ。品質基準を統一すること。</td>
+                    <td>主要な粉類</td>
+                    <td>5～10％</td>
+                    <td>国産品またはバルク輸入品の大量仕入れ。</td>
                 </tr>
                 <tr>
-                    <td>原価率改善例</td>
-                    <td>売上500万円／月の店舗で仕入れコストを10万円削減した場合</td>
-                    <td class="data-highlight">原価率30％→28％に改善</td>
-                    <td>月次でデータを取る仕組み（仕入先・価格・量・廃棄率など）を整える必要あり。</td>
+                    <td>卵・肉・キャベツ</td>
+                    <td>3～5％</td>
+                    <td>地元生産者との契約による安定供給と鮮度の確保。</td>
                 </tr>
                 <tr>
-                    <td>物流コストの改善</td>
-                    <td>共同配送を導入した場合の削減率</td>
-                    <td class="data-highlight">年間で約17.6％の配送コスト削減の事例あり</td>
-                    <td>配送ルート・納品時間・車両制限など調整が必要。</td>
+                    <td>物流コスト</td>
+                    <td>10～15％</td>
+                    <td>複数店舗への小口配送を集約化し、一括納品に切り替える。</td>
                 </tr>
                 </tbody>
             </table>
         </div>
 
-        <h3 style="margin-top: 30px;">共同仕入れに必要な体制と移行モデル</h3>
-        <p>小規模試行には**LLP**が最適。長期的な共同購買基盤とするには事業協同組合への移行が推奨されます。</p>
+        <h3>共同団体としての法人格の選択肢</h3>
+        <p>法人格の選択は、補助金の適用や利益分配の柔軟性に影響します。長期的な安定性のため、**事業協同組合**の設立を推奨します。</p>
         <div class="table-responsive">
             <table class="data-table org-table">
                 <thead>
                 <tr>
-                    <th>項目</th>
+                    <th></th>
                     <th>事業協同組合</th>
                     <th>一般社団法人</th>
                     <th>LLP（有限責任事業組合）</th>
@@ -107,7 +118,7 @@
                 <tbody>
                 <tr>
                     <td>メリット</td>
-                    <td class="data-highlight">補助金適用・制度適合</td>
+                    <td>補助金適用・制度適合</td>
                     <td>設立が迅速、柔軟</td>
                     <td>小規模試行に最適</td>
                 </tr>
@@ -128,7 +139,7 @@
                 対象地域選定、店舗数（目安5～20店舗）集め、共通仕入れ品目と量・頻度、現状の単価・物流コストをヒアリング。
             </li>
             <li>
-                <strong>2. 試行発注フェーズ（3～4ヶ月）</strong>
+                <strong>2. 试行発注フェーズ（3～4ヶ月）</strong>
                 共通品目（粉、キャベツ、油など）を5〜10品目選定し、共同発注スケジュールを決定。物流手配を開始。
             </li>
             <li>
@@ -141,12 +152,13 @@
             </li>
         </ul>
 
-        <a href="kyodo_keiyaku.html" class="cta-button">共同契約プランを見る</a>
+        <a href="kyodo_keiyaku.html" class="cta-button" style="background-color: #5cb85c;">共同契約プランの詳細へ</a>
     </div>
 
     <footer class="app-footer">
         <p>© 2025 粉もんプロジェクト</p>
     </footer>
 </main>
+
 </body>
 </html>

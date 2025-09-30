@@ -6,10 +6,34 @@
   <title>粉もんマップ - 粉もんプロジェクト</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Inline styles for language switch and page-specific styles */
+    .lang-switch {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+    .lang-switch a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: background-color 0.3s;
+    }
+    .lang-switch a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .data-table th, .data-table td { font-size: 0.85rem; }
+  </style>
 </head>
 <body>
 
 <header class="app-header">
+  <div class="lang-switch">
+    <a href="konamon_map-en.html">English (EN)</a>
+  </div>
   <h1>顧客サービス：粉もんマップ詳細</h1>
   <p>ゲーミフィケーションによる強力なエンゲージメント</p>
 </header>
@@ -41,7 +65,7 @@
     <h2>顧客エンゲージメントの課題</h2>
     <ul>
       <li>低エンゲージメント：従来の紙の地図や広告に頼ることで、<span class="data-highlight">高い顧客獲得コスト</span>と、顧客の消費行動や好みを把握するためのデータ洞察の不足。</li>
-      <li>その他：オンラインでの情報収集と、オフラインでの実際の消費体験が別々のプロセスになっている**オンラインとオフラインの分断**。</li>
+      <li>その他：オンラインでの情報収集と、オフラインでの実際の消費体験が別々のプロセスになっている**オンラインとオフラインの分断（O2O）**。</li>
     </ul>
 
     <h3>中核となるソリューション：「粉もんマップ」</h3>
@@ -56,19 +80,49 @@
       <li>多次元フィルター：評価、距離、訪問済みかどうかなどの条件で店舗を絞り込み可能。各ピンには、営業時間、ユーザーレビューなどの詳細情報が含まれます。</li>
     </ul>
 
-    <h3>2. ゲーミフィケーションによるエンゲージメント向上</h3>
+    <h3>2. ゲーミフィケーションとロイヤリティ</h3>
     <ul>
-      <li>ポイントシステム：チェックイン、レビュー投稿、共有などの行動でポイントを獲得。ポイントは提携店舗での<span class="data-highlight">現金割引</span>として利用可能。</li>
-      <li>実績とバッジ：「連続チェックイン」などの実績設計により、ユーザーの達成欲を満たし、アプリの継続利用を促進。</li>
+      <li>スタンプラリー・実績：店舗でのチェックインや購入により**デジタルスタンプ**を獲得し、**NFTバッジ**や特典をアンロック（SDG 8, 11）。</li>
+      <li>ランキングと競争：訪問したユニークな店舗数や消費額に基づくランキングを導入し、競争心を刺激し、地域全体の探索を促します。</li>
     </ul>
 
-    <h3>3. 事業者への価値提供とデータ活用</h3>
+    <h3>3. データフィードバックと事業者支援</h3>
     <ul>
-      <li>データ洞察：店舗はユーザーの行動データ（訪問頻度、人気商品、検索傾向）を受け取れ、パーソナライズされたマーケティングに利用可能。</li>
-      <li>デジタルスタンプラリー：期間限定のスタンプラリーを実施し、地域全体の周遊を促進し、地域経済を活性化。</li>
+      <li>ヒートマップ生成：スタンプラリーのデータを集計し、来店動向のヒートマップを生成。地元事業者に、来店が少ないエリアやピーク時間などの貴重なデータを提供。</li>
+      <li>ダイレクトフィードバック：顧客の好みや行動をリアルタイムで事業者にフィードバックし、タイムリーなメニュー調整やターゲットプロモーションを可能にする。</li>
     </ul>
 
-    <a href="index.html" class="cta-button">ホームに戻る</a>
+    <h3 style="margin-top: 30px;">粉もんマップがもたらすインパクト</h3>
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+        <tr>
+          <th>ステークホルダー</th>
+          <th>メリット</th>
+          <th>データ改善</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>消費者</td>
+          <td>楽しく、やりがいのある体験、特典獲得。</td>
+          <td>高いエンゲージメント（従来ロイヤリティプログラムより平均20％向上）。</td>
+        </tr>
+        <tr>
+          <td>事業者</td>
+          <td>顧客獲得コスト削減、ロイヤリティ向上。</td>
+          <td>90％の店舗が来店データを活用できる。</td>
+        </tr>
+        <tr>
+          <td>地域</td>
+          <td>地域観光収益向上、リソース配分の最適化。</td>
+          <td>SDG 11計画に役立つデータインサイト。</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="kokyaku_service_index.html" class="cta-button">顧客サービス索引に戻る</a>
   </div>
 
   <footer class="app-footer">
